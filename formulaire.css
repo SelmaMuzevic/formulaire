@@ -1,0 +1,38 @@
+label {
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+fieldset {
+    border: none;
+}
+
+ul,
+li {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0em;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+.aze {
+    width: 15.6em;
+}
+
+#description {
+    width: 20em;
+}
+
+#region {
+    width: 16.7em;
+}

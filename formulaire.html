@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formulaire.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,36 +16,47 @@
     <form action="index.html" method="GET">
         <fieldset>
 
-            <main>
-
-                <label for="nom">NOM :</label>
-                <input type="text" name="nom" id="nom">
-
-                <label for="prenom">PRENOM :</label>
-                <input type="text" name="prenom" id="prenom">
-
-                <label for="age">Age :</label>
-                <input type="number" name="age" value="age" min="0">
+            <label for="nom">NOM :</label>
+            <input type="text" name="nom" id="nom">
+        </fieldset>
 
 
-                <label for="email">Email:</label>
-                <input type="email" name="Email" value="email">
+        <fieldset>
+            <label for="prenom">PRENOM :</label>
+            <input type="text" name="prenom" id="prenom">
+        </fieldset>
 
 
-                <label for="pass">MOT DE PASSE :</label>
-                <input type="password" name="pass" id="pass" />
+        <fieldset>
+            <label for="age">AGE :</label>
+            <input class="aze" type="number" name="age" value="age" min="0">
+        </fieldset>
 
 
-                <label for="sexe">Sexe :</label>
-                <ul id="sexe">
-                    <li><label for="genre">homme</label><input id="homme" name="sexe" type="radio" value="homme"></li>
-                    <li><label for="genre">femme</label><input id="femme" name="sexe" type="radio" value="femme"></li>
-                    <li><label for="genre">autre</label><input id="autre" name="sexe" type="radio" value="autre"></li>
-                </ul>
+        <fieldset>
+            <label for="email">EMAIL:</label>
+            <input type="email" name="Email" value="email">
+        </fieldset>
 
 
-                <label for="region">REGION :</label>
-                <select name="region" id="region">
+        <fieldset>
+            <label for="pass">MOT DE PASSE :</label>
+            <input type="password" name="pass" id="pass" />
+        </fieldset>
+
+
+        <fieldset>
+            <label for="sexe">SEXE :</label>
+            <ul id="sexe">
+                <li><label for="genre">homme</label><input id="homme" name="sexe" type="radio" value="homme"></li>
+                <li><label for="genre">femme</label><input id="femme" name="sexe" type="radio" value="femme"></li>
+                <li><label for="genre">autre</label><input id="autre" name="sexe" type="radio" value="autre"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+
+            <label for="region">REGION :</label>
+            <select name="region" id="region">
 
         <option value"alsace">Alsace</option>
         <option value"Aquitaine">Aquitaine</option>
@@ -71,13 +82,21 @@
          <option value"Rhône-Alpes">Rhône-Alpes</option>
 
        </select>
-
         </fieldset>
 
-        <input type="submit" value="Envoyer" />
+        <fieldset>
+            <label for="description">Description ( facultatif ) :</label>
 
+            <textarea name="description" id="description" cols="40" rows="4"></textarea>
+        </fieldset>
+
+
+        <div id="button">
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Annuler" />
+        </div>
     </form>
-    </main>
+
 </body>
 
 </html>
