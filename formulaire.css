@@ -3,6 +3,16 @@ label {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    font-size: larger;
+    font-style: italic;
+    color: yellow;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: xx-large;
 }
 
 fieldset {
