@@ -14,82 +14,55 @@
     <h1>Formulaire D'Inscription</h1>
 
     <form action="index.html" method="GET">
-        <fieldset>
 
-            <label for="nom">NOM :</label>
-            <input type="text" name="nom" id="nom">
-        </fieldset>
+        <label for="nom">NOM :</label>
+        <input type="text" name="nom" id="nom">
+        <label for="prenom">PRENOM :</label>
+        <input type="text" name="prenom" id="prenom">
+        <label for="age">AGE :</label>
+        <input class="aze" type="number" id="age" name="age" min="0">
+        <label for="email">EMAIL:</label>
+        <input type="email" name="Email" id="email" value="email">
+        <label for="pass">MOT DE PASSE :</label>
+        <input type="password" name="pass" id="pass" />
 
+        <label for="sexe">SEXE :</label>
+        <ul id="sexe">
+            <li><label for="genre">homme</label><input id="homme" name="sexe" type="radio" value="homme"></li>
+            <li><label for="genre">femme</label><input id="femme" name="sexe" type="radio" value="femme"></li>
+            <li><label for="genre">autre</label><input id="autre" name="sexe" type="radio" value="autre"></li>
+        </ul>
 
-        <fieldset>
-            <label for="prenom">PRENOM :</label>
-            <input type="text" name="prenom" id="prenom">
-        </fieldset>
+        <label for="region">REGION :</label>
+        <select name="region" id="region">
 
+         <option value="alsace">Alsace</option>
+         <option value="Aquitaine">Aquitaine</option>
+         <option value="Auvergne">Auvergne</option>
+         <option value="Basse-Normandie">Basse-Normandie</option>
+         <option value="Bourgogne">Bourgogne</option>
+         <option value="Bretagne">Bretagne</option>
+         <option value="Centre">Centre</option>
+         <option value="Champagne-Ardenne">Champagne-Ardenne</option>
+         <option value="Corse">Corse</option>
+         <option value="Franche-Comté">Franche-Comté</option>
+         <option value="Haute-Normandie">Haute-Normandie</option>
+         <option value="Île-de-France">Île-de-France</option>
+         <option value="Languedoc-Roussillon">Languedoc-Roussillon</option>
+         <option value="Limousin">Limousin</option>
+         <option value="Lorraine">Lorraine</option>
+         <option value="Midi-Pyrénées">Midi-Pyrénées</option>
+         <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
+         <option value="Pays de la Loire">Pays de la Loire</option>
+         <option value="Picardie">Picardie</option>
+         <option value="Poitou-Charentes">Poitou-Charentes</option>
+         <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+         <option value="Rhône-Alpes">Rhône-Alpes</option>
 
-        <fieldset>
-            <label for="age">AGE :</label>
-            <input class="aze" type="number" name="age" value="age" min="0">
-        </fieldset>
+    </select>
 
-
-        <fieldset>
-            <label for="email">EMAIL:</label>
-            <input type="email" name="Email" value="email">
-        </fieldset>
-
-
-        <fieldset>
-            <label for="pass">MOT DE PASSE :</label>
-            <input type="password" name="pass" id="pass" />
-        </fieldset>
-
-
-        <fieldset>
-            <label for="sexe">SEXE :</label>
-            <ul id="sexe">
-                <li><label for="genre">homme</label><input id="homme" name="sexe" type="radio" value="homme"></li>
-                <li><label for="genre">femme</label><input id="femme" name="sexe" type="radio" value="femme"></li>
-                <li><label for="genre">autre</label><input id="autre" name="sexe" type="radio" value="autre"></li>
-            </ul>
-        </fieldset>
-        <fieldset>
-
-            <label for="region">REGION :</label>
-            <select name="region" id="region">
-
-         <option value"alsace">Alsace</option>
-         <option value"Aquitaine">Aquitaine</option>
-         <option value"Auvergne">Auvergne</option>
-         <option value"Basse-Normandie">Basse-Normandie</option>
-         <option value"Bourgogne">Bourgogne</option>
-         <option value"Bretagne">Bretagne</option>
-         <option value"Centre">Centre</option>
-         <option value"Champagne-Ardenne">Champagne-Ardenne</option>
-         <option value"Corse">Corse</option>
-         <option value"Franche-Comté">Franche-Comté</option>
-         <option value"Haute-Normandie">Haute-Normandie</option>
-         <option value"Île-de-France">Île-de-France</option>
-         <option value"Languedoc-Roussillon">Languedoc-Roussillon</option>
-         <option value"Limousin">Limousin</option>
-         <option value"Lorraine">Lorraine</option>
-         <option value"Midi-Pyrénées">Midi-Pyrénées</option>
-         <option value"Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
-         <option value"Pays de la Loire">Pays de la Loire</option>
-         <option value"Picardie">Picardie</option>
-         <option value"Poitou-Charentes">Poitou-Charentes</option>
-         <option value"Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
-         <option value"Rhône-Alpes">Rhône-Alpes</option>
-
-       </select>
-        </fieldset>
-
-        <fieldset>
-            <label for="description">Description ( facultatif ) :</label>
-
-            <textarea name="description" id="description" cols="40" rows="4"></textarea>
-        </fieldset>
-
+        <label for="description">Description ( facultatif ) :</label>
+        <textarea name="description" id="description" cols="40" rows="4"></textarea>
 
         <div id="button">
             <input type="submit" value="Envoyer" />
